@@ -23,9 +23,7 @@ db.connect((err) => {
 
 
 
-app.get('/',(re,res)=>{
-    return res.send('Hello World')
-})
+
 
 app.get('/api/flashcards', (req, res) => {
     const query = 'SELECT * FROM flashcards';

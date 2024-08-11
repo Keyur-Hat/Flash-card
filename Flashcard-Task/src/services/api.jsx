@@ -6,9 +6,9 @@ const api = axios.create({
 
 export default api;
 
-export const getFlashcards = async () => {
-    return api.get('/flashcards');
-};
+export const getFlashcards = () => {
+    return api.get('/api/flashcards');  
+  };
 
 export const addFlashcard = async (flashcard) => {
     return api.post('/flashcards', flashcard);
