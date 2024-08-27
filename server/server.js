@@ -23,8 +23,6 @@ db.connect((err) => {
 
 
 
-
-
 app.get('/api/flashcards', (req, res) => {
     const query = 'SELECT * FROM flashcards';
     db.query(query, (err, result) => {

@@ -1,4 +1,5 @@
 import React, {useState}from 'react'
+import './flashCard.css'
 
 
 export default function FlashCard({flashcard}) {
@@ -9,7 +10,7 @@ export default function FlashCard({flashcard}) {
     }
 
   return (
-    <div className={`flashcard ${isFlipped? 'is-flipped' : ''}`}>
+    <div className={`flashcard ${isFlipped ? 'is-flipped' : ''}`} onClick={handleFlip}>
     <div className='flashcard-inner'>
     <div className="front">
         {flashcard.question}

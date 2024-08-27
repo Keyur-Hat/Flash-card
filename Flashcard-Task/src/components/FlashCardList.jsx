@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import FlashCard from './flashCard'
 import {getFlashcards} from '../services/api'
+import './flashCardList.css';
 
 
 

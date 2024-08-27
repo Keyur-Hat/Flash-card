@@ -1,0 +1,53 @@
+/* flashCard.css */
+
+/* Container for the flashcard */
+.flashcard {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Inner container for the flip effect */
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+/* Styles when the card is flipped */
+.flashcard.is-flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back sides of the flashcard */
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the front side of the card */
+.front {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Styling for the back side of the card */
+.back {
+    background-color: #f8f9fa;
+    color: #333333;
+    transform: rotateY(180deg);
+}

@@ -11,14 +11,14 @@ export const getFlashcards = () => {
   };
 
 export const addFlashcard = async (flashcard) => {
-    return api.post('/flashcards', flashcard);
+    return api.post('/api/flashcards', flashcard);
 };
 
 export const deleteFlashcard = async (id) => {
-    return api.delete(`/flashcards/${id}`);
+    return api.delete(`/api/flashcards/${id}`);
 
 };
 
 export const updateFlashcard = async (id, flashcard) => {
-    return api.put(`/flashcards/${id}`, flashcard);
+    return api.put(`/api/flashcards/${id}`, flashcard);
 };
